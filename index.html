@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vertex AI Search Widget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Widget JavaScript bundle -->
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+      background: #f5f5f5;
+    }
+
+    input {
+      width: 300px;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>CrawlCrawlGo</h2>
+  <p>A free tool to search for free courses across all study domains, Search Now</p>
+
+  <!-- Element that opens the widget -->
+  <input placeholder="Search here..." id="searchWidgetTrigger" />
+
+  <!-- Search widget -->
+  <gen-search-widget
+    configId="8e14d699-5ff7-44d3-b746-4c7386a1a49b"
+    triggerId="searchWidgetTrigger">
+  </gen-search-widget>
+
+</body>
+</html>
